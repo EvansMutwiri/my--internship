@@ -9,3 +9,10 @@
 
 
 ## Day 2  
+1. Report: [Version Control](20220405-Daily-Report#2-Version-Control.docx)
+- Branching and Merging.
+- Comparison.
+- Rebasing.
+- Stashing.
+- Pull Requests.
+- GitHub Actions.
