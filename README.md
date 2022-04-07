@@ -16,3 +16,10 @@
 - Stashing.
 - Pull Requests.
 - GitHub Actions.
+
+## Day 3
+1. Report #3: [SQL](20220406-Daily-Report-%233-SQL.docx)
+- Managing databases
+- Data manipulation
+
+2. Blog #3: [Marketing Difficulty](20220406-Daily-Blog-%233-Marketing-Difficulty.docx)
