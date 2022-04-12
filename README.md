@@ -23,3 +23,22 @@
 - Data manipulation
 
 2. Blog #3: [Marketing Difficulty](20220406-Daily-Blog-%233-Marketing-Difficulty.docx)
+
+
+## Day 6  
+
+1. Report #6: [HTML & CSS](20220411-Daily-Report-#6-HTML&CSS.pdf)
+- HTML, HTML 5
+i. HTML elements - Headings, paragraphs,quotations,comments, Iframes...
+ii. HTML forms
+iii. HTML media
+iv. Other HTML elements
+
+- CSS
+i. Introduction - Syntax, css attributes
+ii. CSS grid
+iii CSS flexbox
+iv Media queries
+v Other CSS attributes  
+
+2. Project [PORTFOLIO](https://github.com/EvansMutwiri/legendary-carnival)
