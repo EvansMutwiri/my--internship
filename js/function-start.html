@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Function start</title>
+  <style>
+    .msgBox {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 242px;
+      background: #eee;
+      padding-left: 82px;
+      background-position: 24px center;
+      background-repeat: no-repeat;
+    }
+
+    .msgBox p {
+      line-height: 1.5;
+      padding: 10px 20px;
+      color: #333;
+    }
+
+    .msgBox button {
+      background: white;
+      border: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 1.1rem;
+      color: red;
+    }
+
+    .show {
+      position: absolute;
+      /* right: 50%; */
+      margin: auto;
+      top: 20px;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="show">Display message box</button>
+
+  <script>
+    function displayMessage(msgBody, msgType) {
+      const body = document.body;
+      const panel = document.createElement('div');
+      panel.setAttribute('class', 'msgBox');
+      body.appendChild(panel);
+
+      const textBox = document.createElement('p');
+      textBox.textContent = msgBody;
+      panel.appendChild(textBox);
+
+      const button = document.createElement('button');
+      button.textContent = 'x';
+      button.style.cursor = 'pointer';
+      panel.appendChild(button);
+
+      button.addEventListener('click', () => {
+        panel.parentNode.removeChild(panel);
+        alert('Message deleted!');
+      });
+
+      if (msgType === 'warning') {
+        panel.style.backgroundImage = 'url(icons/warning.png)';
+        panel.style.backgroundColor = 'red'
+      } else if (msgType === 'chat') {
+        panel.style.backgroundImage = 'url(icons/chat.png)';
+        panel.style.backgroundColor = 'aqua'
+      } else {
+        textBox.style.paddingLeft = '20px';
+      }
+    }
+
+    // setTimeout(displayMessage, 10000);
+
+    const btn = document.querySelector('button');
+    btn.addEventListener('click', () => displayMessage("Your inbox is almost full!", 'warning'));
+  </script>
+</body>
+
+</html>
