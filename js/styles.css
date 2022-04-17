@@ -2,5 +2,71 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-image: url("rm373batch13-086.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+}
+
+.container {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.266);
+  border-radius: 3%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5% 6%;
+  margin-top: 30vh;
+  left: 50%;
+  -webkit-transform: -50%;
+          transform: -50%;
+  translate: -50%;
+  color: antiquewhite;
+}
+
+.container form {
+  padding: 10px 0;
+}
+
+.container form input {
+  padding: 12px 20px;
+  margin: 8px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #555;
+  color: white;
+}
+
+.container form input:focus {
+  background-color: #434d50;
+  border: 2px solid white;
+}
+
+.container form select {
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+.container form button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.container #result {
+  text-align: center;
+  border: 1px solid white;
+  padding: 10px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin: 0 0;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,4 +1,70 @@
+$bold: 600;
+$fontFam: 'Courier New', Courier, monospace;
+$bg : white;
+
+
 body {
     padding: 0;
     box-sizing: border-box;
+    background-image: url("rm373batch13-086.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
+    font-family: $fontFam;
+    font-weight: $bold;
+}
+
+.container {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.266);
+    border-radius: 3%;
+    width: fit-content;
+    padding: 5% 6%;
+    margin-top: 30vh;
+    left: 50%;
+    transform: -50%;
+    translate: -50%;
+    color: antiquewhite;
+
+    form {
+        padding: 10px 0;
+
+        input {
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            background-color: #555;
+            color: $bg;
+
+            &:focus {
+                background-color: rgb(67, 77, 80);
+                border: 2px solid $bg;
+            }
+        }
+
+        select {
+            padding: 16px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #f1f1f1;
+        }
+
+        button {
+            background-color: #04AA6D;
+            border: none;
+            color: $bg;
+            padding: 8px 20px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    }
+
+    #result {
+        text-align: center;
+        border: 1px solid $bg;
+        padding: 10px 0;
+        box-sizing: border-box;
+        width: 100%;
+        margin: 0 0;
+    }
 }
